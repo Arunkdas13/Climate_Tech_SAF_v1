@@ -30,7 +30,7 @@ def load_data():
     df["county_state"] = df["COUNTY_NAME"] + ", " + df["STATE_NAME"]
 
     # Load shapefile
-    gdf = gpd.read_file("tl_2022_us_county.shp")
+    gdf = gpd.read_file("cb_2022_us_county_5m.shp")
     gdf["GEOID"] = (gdf["STATEFP"] + gdf["COUNTYFP"]).astype(str).str.zfill(5)
 
     return df, gdf, numeric_cols
