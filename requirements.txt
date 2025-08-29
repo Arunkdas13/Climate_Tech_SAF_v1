@@ -1,0 +1,8 @@
+streamlit
+pandas
+geopandas
+matplotlib
+geoplot
+mapclassify
+shapely
+plotly
